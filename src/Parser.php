@@ -9,7 +9,7 @@
  * @license BSD License
  * @since 2010
  */
-require_once "PHPLPM/Exception.php";
+require_once "src/Exception.php";
 
 /**
  * PHP Lines per Method Parser

@@ -12,8 +12,8 @@
 /**
  * load PHPLPM Core Files
  */
-require_once "PHPLPM/Exception.php";
-require_once "PHPLPM/Parser.php";
+require_once "src/Exception.php";
+require_once "src/Parser.php";
 
 /**
  * load eZ Componants Base to use ConsoleTools
