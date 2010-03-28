@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Parser</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Parser</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">PHP Lines per Method Parser</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Sebastian Bechtel &lt;<a href="mailto:me@sebastian-bechtel.info">me@sebastian-bechtel.info</a>&gt;</li>
+				<li><span class="field">version:</span> 1.0.0</li>
+				<li><span class="field">copyright:</span> Sebastian Bechtel &lt;me@sebastian-bechtel.info&gt;. All rights reserved.</li>
+				<li><span class="field">since:</span> 2010</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_PHPLPM---Parser.php.html">/PHPLPM/Parser.php</a> (line <span class="field">22</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$classes" title="details" class="var-name">$classes</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$methods" title="details" class="var-name">$methods</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$result" title="details" class="var-name">$result</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$tokens" title="details" class="var-name">$tokens</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																				
+												<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#parse" title="details" class="method-name">parse</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#_countMethodLines" title="details" class="method-name">_countMethodLines</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#_findClasses" title="details" class="method-name">_findClasses</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#_findMethods" title="details" class="method-name">_findMethods</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_findNameToken" title="details" class="method-name">_findNameToken</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_prepare" title="details" class="method-name">_prepare</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#_sliceBlock" title="details" class="method-name">_sliceBlock</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#_splitByToken" title="details" class="method-name">_splitByToken</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$php_token</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$classes" id="$classes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$classes</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">28</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$methods" id="$methods"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$methods</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">29</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$result" id="$result"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$result</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">34</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tokens" id="$tokens"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$tokens</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">26</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodparse" id="parse"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">parse</span> (line <span class="line-number">55</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse the given string</p>
+<p class="description"><p>Parses the given string and returns a result array:</p><p><pre> array(
+   [CLASS] => array(
+     [0] => array(
+       [name] => METHOD
+       [lines] => 2
+     )
+   )
+ )</pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			parse
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_countMethodLines" id="_countMethodLines"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_countMethodLines</span> (line <span class="line-number">241</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Count lines of method</p>
+<p class="description"><p>Count the lines of a method. The code will be trimmed what means, that beginning and  ending T_WHITESPACE are ignored. The number of lines is calculated with the  second token index.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> PHPLPMException</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			_countMethodLines
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tokens</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_findClasses" id="_findClasses"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_findClasses</span> (line <span class="line-number">162</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Split token array by T_CLASS</p>
+<p class="description"><p>The tokens will be splitted by T_CLASS. The last part are all tokens after the last  T_CLASS token.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			_findClasses
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tokens</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_findMethods" id="_findMethods"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_findMethods</span> (line <span class="line-number">175</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Split token array by T_FUNCTION</p>
+<p class="description"><p>The tokens will be splitted by T_FUNCTION. The last part are all tokens after the last  T_FUNCTION token.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			_findMethods
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tokens</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_findNameToken" id="_findNameToken"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_findNameToken</span> (line <span class="line-number">221</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Find name token</p>
+<p class="description"><p>Find the first occuring T_STRING token. This function will be called after T_CLASS  or T_FUNCTION so this token is the name of the class/function.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> PHPLPMException</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_findNameToken
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tokens</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_prepare" id="_prepare"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_prepare</span> (line <span class="line-number">111</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prepare source code for parsing</p>
+<p class="description"><p>The source code will be tokenized by php. The source code must be a string and  can not be ''. Their must be more than one token. One token is a hint for a file  without Opening Tag.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> PHPLPMException</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_prepare
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_sliceBlock" id="_sliceBlock"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_sliceBlock</span> (line <span class="line-number">190</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Slice first php code block</p>
+<p class="description"><p>Slices the tokens in the first occuring php code block ( { ... } ). Throws  an PHPLPMException if no block is found (this function should only be called after  a T_CLASS token, a T_FUNCTION token or something similar.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> PHPLPMException</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			_sliceBlock
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tokens</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_splitByToken" id="_splitByToken"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_splitByToken</span> (line <span class="line-number">133</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Split token array by a php token</p>
+<p class="description"><p>The tokens from parameter $tokens will be splitted by specified php token $php_token.  The last part are all tokens after the last php token.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> PHPLPMException</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			_splitByToken
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tokens</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$php_token</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tokens</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$php_token</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 28 Mar 2010 20:33:22 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
