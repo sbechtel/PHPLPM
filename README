@@ -1,0 +1,7 @@
+PHPLPM
+
+It is used to count the lines of the method in a PHP file. It will output the
+method name, it's class and the number of lines the method has.
+
+The counting starts with the first code in a method and ends with the last code
+so empty lines between { and the first statement will not be in the result.
