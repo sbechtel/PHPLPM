@@ -37,6 +37,43 @@ class Command {
         $input = new ezcConsoleInput;
         $output = new ezcConsoleOutput;
 
-        $parser = new Parser;
+        $input->registerOption(new ezcConsoleOption(
+            'h', 'help'
+        ));
+        $input->registerOption(new ezcConsoleOption(
+            'p', 'process'
+        ));
+
+        $input->process();
+
+        if($input->getOption("p")->value) {
+            $parser = new Parser;
+            $result = $parser->parse(file_get_contents("_testdata/sample.php", 1));
+
+            $table = new ezcConsoleTable($output, 60);
+
+            $table[0][0]->content = "Class";
+            $table[0][1]->content = "Method";
+            $table[0][2]->content = "Lines";
+
+            $i = 1;
+
+            foreach($result as $class => $methods) {
+                foreach($methods as $method) {
+                    $row = $table[$i];
+
+                    $row[0]->content = $class;
+                    $row[1]->content = $method["name"];
+                    $row[2]->content = (string)$method["lines"];
+
+                    $i++;
+                }
+            }
+
+            $table->outputTable();
+            print "\n";
+            //print_r($result);
+        }
+        
     }
 }
