@@ -9,6 +9,7 @@
  * @license BSD License
  * @since 2010
  */
+namespace sbechtel\PHPLpm;
 /**
  * PHPLPM Exception
  *
@@ -17,6 +18,6 @@
  * @since 2010
  * @version 1.0.0
  */
-class PHPLPMException extends RuntimeException {
+class PHPLPMException extends \RuntimeException {
     
 }

@@ -9,6 +9,8 @@
  * @license BSD License
  * @since 2010
  */
+namespace sbechtel\PHPLpm;
+
 require_once "src/Exception.php";
 
 /**

@@ -9,6 +9,9 @@
  * @license BSD License
  * @since 2010
  */
+namespace sbechtel\PHPLpm\TextUI;
+
+use sbechtel\PHPLpm;
 /**
  * load PHPLPM Core Files
  */
@@ -20,9 +23,11 @@ require_once "src/Parser.php";
  */
 require "ezc/Base/base.php";
 
-function __autoload($class) {
-    ezcBase::autoload($class);
+function autoload($class) {
+    \ezcBase::autoload($class);
 }
+
+spl_autoload_register('\sbechtel\PHPLpm\TextUI\autoload');
 
 /**
  * TextUI frontend for phplpm
@@ -34,23 +39,23 @@ function __autoload($class) {
  */
 class Command {
     public function main() {
-        $input = new ezcConsoleInput;
-        $output = new ezcConsoleOutput;
+        $input  = new \ezcConsoleInput;
+        $output = new \ezcConsoleOutput;
 
-        $input->registerOption(new ezcConsoleOption(
+        $input->registerOption(new \ezcConsoleOption(
             'h', 'help'
         ));
-        $input->registerOption(new ezcConsoleOption(
+        $input->registerOption(new \ezcConsoleOption(
             'p', 'process'
         ));
 
         $input->process();
 
         if($input->getOption("p")->value) {
-            $parser = new Parser;
+            $parser = new PHPLpm\Parser;
             $result = $parser->parse(file_get_contents("_testdata/sample.php", 1));
 
-            $table = new ezcConsoleTable($output, 60);
+            $table = new \ezcConsoleTable($output, 60);
 
             $table[0][0]->content = "Class";
             $table[0][1]->content = "Method";
